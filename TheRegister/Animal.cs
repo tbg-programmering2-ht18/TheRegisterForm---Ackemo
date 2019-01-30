@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheRegister
 {
-    class Animal
+    public class Animal
     {
         public string Name { get; set; }
         public string Sound { get; set; }

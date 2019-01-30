@@ -28,118 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.edtName = new System.Windows.Forms.TextBox();
-            this.cbCanFly = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.edtSound = new System.Windows.Forms.TextBox();
-            this.btnLogout = new System.Windows.Forms.Button();
+            this.editName = new System.Windows.Forms.TextBox();
+            this.editSound = new System.Windows.Forms.TextBox();
+            this.checkBoxCanFly = new System.Windows.Forms.CheckBox();
+            this.cbAnimalType = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Logoutbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // editName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Animal";
+            this.editName.Enabled = false;
+            this.editName.Location = new System.Drawing.Point(87, 25);
+            this.editName.Name = "editName";
+            this.editName.Size = new System.Drawing.Size(308, 20);
+            this.editName.TabIndex = 0;
             // 
-            // label2
+            // editSound
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Sound";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.editSound.Enabled = false;
+            this.editSound.Location = new System.Drawing.Point(87, 59);
+            this.editSound.Name = "editSound";
+            this.editSound.Size = new System.Drawing.Size(308, 20);
+            this.editSound.TabIndex = 1;
             // 
-            // label3
+            // checkBoxCanFly
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Name";
+            this.checkBoxCanFly.AutoSize = true;
+            this.checkBoxCanFly.Location = new System.Drawing.Point(26, 140);
+            this.checkBoxCanFly.Name = "checkBoxCanFly";
+            this.checkBoxCanFly.Size = new System.Drawing.Size(61, 17);
+            this.checkBoxCanFly.TabIndex = 2;
+            this.checkBoxCanFly.Text = "Can Fly";
+            this.checkBoxCanFly.UseVisualStyleBackColor = true;
+            this.checkBoxCanFly.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // edtName
+            // cbAnimalType
             // 
-            this.edtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edtName.Location = new System.Drawing.Point(178, 26);
-            this.edtName.Name = "edtName";
-            this.edtName.Size = new System.Drawing.Size(327, 30);
-            this.edtName.TabIndex = 3;
-            // 
-            // cbCanFly
-            // 
-            this.cbCanFly.AutoSize = true;
-            this.cbCanFly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCanFly.Location = new System.Drawing.Point(45, 210);
-            this.cbCanFly.Name = "cbCanFly";
-            this.cbCanFly.Size = new System.Drawing.Size(102, 29);
-            this.cbCanFly.TabIndex = 4;
-            this.cbCanFly.Text = "Can Fly";
-            this.cbCanFly.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbAnimalType.Enabled = false;
+            this.cbAnimalType.FormattingEnabled = true;
+            this.cbAnimalType.Items.AddRange(new object[] {
             "Cat",
             "Dog",
-            "Horse",
+            "Dragon",
             "Bird",
-            "Dragon"});
-            this.comboBox1.Location = new System.Drawing.Point(178, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(327, 33);
-            this.comboBox1.TabIndex = 5;
+            "Horse"});
+            this.cbAnimalType.Location = new System.Drawing.Point(87, 96);
+            this.cbAnimalType.Name = "cbAnimalType";
+            this.cbAnimalType.Size = new System.Drawing.Size(308, 21);
+            this.cbAnimalType.TabIndex = 3;
             // 
-            // edtSound
+            // label4
             // 
-            this.edtSound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edtSound.Location = new System.Drawing.Point(178, 79);
-            this.edtSound.Name = "edtSound";
-            this.edtSound.Size = new System.Drawing.Size(327, 30);
-            this.edtSound.TabIndex = 6;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Name: ";
             // 
-            // btnLogout
+            // label5
             // 
-            this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(421, 195);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(109, 38);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(22, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Sound:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(22, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Animal";
+            // 
+            // Logoutbtn
+            // 
+            this.Logoutbtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Logoutbtn.Location = new System.Drawing.Point(320, 140);
+            this.Logoutbtn.Name = "Logoutbtn";
+            this.Logoutbtn.Size = new System.Drawing.Size(75, 23);
+            this.Logoutbtn.TabIndex = 7;
+            this.Logoutbtn.Text = "Logout";
+            this.Logoutbtn.UseVisualStyleBackColor = true;
             // 
             // UserFrm
             // 
-            this.AcceptButton = this.btnLogout;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 274);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.edtSound);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.cbCanFly);
-            this.Controls.Add(this.edtName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.AcceptButton = this.Logoutbtn;
+            this.ClientSize = new System.Drawing.Size(407, 173);
+            this.Controls.Add(this.Logoutbtn);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbAnimalType);
+            this.Controls.Add(this.checkBoxCanFly);
+            this.Controls.Add(this.editSound);
+            this.Controls.Add(this.editName);
             this.MaximizeBox = false;
             this.Name = "UserFrm";
-            this.Text = "UserFrm";
+            this.Text = "UserData";
             this.Load += new System.EventHandler(this.UserFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,5 +151,13 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox edtSound;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.TextBox editName;
+        private System.Windows.Forms.TextBox editSound;
+        private System.Windows.Forms.CheckBox checkBoxCanFly;
+        private System.Windows.Forms.ComboBox cbAnimalType;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Logoutbtn;
     }
 }

@@ -32,6 +32,7 @@ namespace TheRegister
             if (errorMessage == "")
             {
                 this.Hide();
+                frmUser.Text = editUsrname.Text;
                 if (frmUser.ShowDialog() == DialogResult.OK)
                 {
                     lblErrorMessage.Text = "";
@@ -57,11 +58,12 @@ namespace TheRegister
                     bool animalExist = userAnimalDict.TryGetValue(user, out registredAnimal);
                     if (animalExist)
                     {
+                        frmUser.initializeAnimal(registredAnimal);
                         Console.WriteLine("This is your animal:{0}", registredAnimal.Show());
                     }
                     else
                     {
-                        Console.WriteLine("Sorry, you have no animal!");
+                        frmUser.initializeAnimal(null);
                     }
                 }
                 else
@@ -119,6 +121,11 @@ namespace TheRegister
                 string json = File.ReadAllText(arFilename);
                 userAnimalDict = JsonConvert.DeserializeObject<Dictionary<String, Animal>>(json);
             }
+
+        }
+
+        private void LoginFrm_Load(object sender, EventArgs e)
+        {
 
         }
     }
